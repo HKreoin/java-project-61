@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    checkstyle
 }
 
 repositories {
@@ -34,6 +35,6 @@ tasks.named<Test>("test") {
     useJUnitPlatform()
 }
 
-compileJava {
-  options.release = 20
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
 }
