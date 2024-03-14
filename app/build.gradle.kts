@@ -33,3 +33,7 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+compileJava {
+  options.release = 20
+}
