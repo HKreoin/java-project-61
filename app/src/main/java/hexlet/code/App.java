@@ -10,12 +10,14 @@ public class App {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Great");
         System.out.println("2 - Even");
+        System.out.println("3 - Calc");
         System.out.println("0 - Exit");
         String gameNumber = scanner.next();
         System.out.println("Your choice: " + gameNumber);
         switch (gameNumber) {
             case "1" -> Logic.great();
             case "2" -> Logic.even();
+            case "3" -> Logic.calc();
             default -> System.out.println("Exit");
         }
         scanner.close();
