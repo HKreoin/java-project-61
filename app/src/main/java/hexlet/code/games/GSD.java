@@ -4,12 +4,16 @@ import hexlet.code.Util;
 import java.util.Scanner;
 
 public class GSD {
-    public static boolean play() {
-        System.out.println("Find the greatest common divisor of given numbers.");
-        Scanner scanner = new Scanner(System.in);
 
+    public static void question() {
+        System.out.println("Find the greatest common divisor of given numbers.");
+    }
+
+    public static boolean play() {
+        Scanner scanner = new Scanner(System.in);
         int number1 = Util.random();
         int number2 = Util.random();
+
         System.out.println("Question: " + number1 + " " + number2);
         System.out.print("Your answer: ");
         String answer = scanner.next();

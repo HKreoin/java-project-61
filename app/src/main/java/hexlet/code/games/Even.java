@@ -4,8 +4,12 @@ import hexlet.code.Util;
 import java.util.Scanner;
 
 public class Even {
-    public static boolean play() {
+
+    public static void question() {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+    }
+
+    public static boolean play() {
         Scanner scanner = new Scanner(System.in);
         String even = "";
         String answer = "";

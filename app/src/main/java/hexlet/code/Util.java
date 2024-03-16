@@ -26,4 +26,33 @@ public class Util {
         }
         return min;
     }
+
+    public static int[] progression() {
+        int[] numbers = new int[random(5, 10)];
+        int append = random(1, 10);
+        numbers[0] = random(0, 100);
+        int length = numbers.length;
+
+        for (int i = 1; i < length; i++) {
+            numbers[i] = numbers[i - 1] + append;
+        }
+        return numbers;
+    }
+
+    public static String[] numsToStringArray(int[] numbers) {
+        int length = numbers.length;
+        String[] newArray = new String[length];
+        for (int i = 0; i < length; i++) {
+            newArray[i] = String.valueOf(numbers[i]);
+        }
+        return newArray;
+    }
+
+    public static void printArray(String[] array) {
+        int length = array.length;
+        for (int i = 0; i < length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
 }

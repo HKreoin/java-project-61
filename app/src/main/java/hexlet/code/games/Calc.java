@@ -4,8 +4,12 @@ import hexlet.code.Util;
 import java.util.Scanner;
 
 public final class Calc {
-    public static boolean play() {
+
+    public static void question() {
         System.out.println("What is the result of the expression?");
+    }
+
+    public static boolean play() {
         Scanner scanner = new Scanner(System.in);
         int number1 = Util.random();
         int number2 = Util.random();
