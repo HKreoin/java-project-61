@@ -15,4 +15,15 @@ public class Util {
         String[] operands = {"+", "-", "*"};
         return operands[random];
     }
+
+    public static int gsd(int num1, int num2) {
+        int min = Math.min(num1, num2);
+        int max = Math.max(num1, num2);
+        while (max % min != 0) {
+            int buffer = min;
+            min = max % min;
+            max = buffer;
+        }
+        return min;
+    }
 }

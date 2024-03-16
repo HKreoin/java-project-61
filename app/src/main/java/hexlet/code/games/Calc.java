@@ -7,17 +7,14 @@ public final class Calc {
     public static boolean play() {
         System.out.println("What is the result of the expression?");
         Scanner scanner = new Scanner(System.in);
-        String calc = "";
-        String answer = "";
-
         int number1 = Util.random();
         int number2 = Util.random();
         String operand = Util.operand();
 
         System.out.println("Question: " + number1 + " " + operand + " " + number2);
         System.out.print("Your answer: ");
-        answer = scanner.next();
-        calc = switch (operand) {
+        String answer = scanner.next();
+        String calc = switch (operand) {
             case "+" -> String.valueOf(number1 + number2);
             case "-" -> String.valueOf(number1 - number2);
             case "*" -> String.valueOf(number1 * number2);

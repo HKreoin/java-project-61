@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Great;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
+import hexlet.code.games.GSD;
 
 public class Engine {
     public static void start(int numOfGame) {
@@ -13,6 +14,7 @@ public class Engine {
                 state = switch (numOfGame) {
                     case 2 -> Even.play();
                     case 3 -> Calc.play();
+                    case 4 -> GSD.play();
                     default -> false;
                 };
             }
