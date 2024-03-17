@@ -19,12 +19,6 @@ public class Even {
         }
         System.out.println("Question: " + number);
         String answer = Util.answer();
-        if (answer.equals(even)) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println(answer + " is wrong answer ;(. Correct answer was " + even + ".");
-            return false;
-        }
-        return answer.equals(even);
+        return Util.check(answer, even);
     }
 }

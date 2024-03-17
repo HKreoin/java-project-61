@@ -1,3 +1,3 @@
 # Makefile
-run-dist:
+run:
 	@command ./build/install/app/bin/app 

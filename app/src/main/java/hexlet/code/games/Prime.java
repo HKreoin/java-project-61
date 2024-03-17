@@ -18,12 +18,6 @@ public class Prime {
         }
         System.out.println("Question: " + number);
         String answer = Util.answer();
-        if (answer.equals(prime)) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println(answer + " is wrong answer ;(. Correct answer was " + prime + ".");
-            return false;
-        }
-        return answer.equals(prime);
+        return Util.check(answer, prime);
     }
 }

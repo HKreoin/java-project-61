@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Util {
     public static int random() {
-        return random(1, 100);
+        int min = 1;
+        int max = 100;
+        return random(min, max);
     }
 
     public static int random(int min, int max) {
@@ -30,9 +32,15 @@ public class Util {
     }
 
     public static int[] progression() {
-        int[] numbers = new int[random(5, 10)];
-        int append = random(1, 10);
-        numbers[0] = random(0, 100);
+        int minLength = 5;
+        int maxLength = 10;
+        int[] numbers = new int[random(minLength, maxLength)];
+        int minStep = 1;
+        int maxStep = 10;
+        int append = random(minStep, maxStep);
+        int minNumber = 0;
+        int maxNumber = 100;
+        numbers[0] = random(minNumber, maxNumber);
         int length = numbers.length;
 
         for (int i = 1; i < length; i++) {
@@ -66,14 +74,20 @@ public class Util {
     }
 
     public static boolean prime(int num) {
-        if (num > 1) {
-            for (int i = 2; i < Math.sqrt(num); i++) {
-                if (num % i == 0) {
-                    return false;
-                }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0 || num < 1) {
+                return false;
             }
+        }
+        return true;
+
+    }
+    public static boolean check(String value1, String value2) {
+        if (value1.equals(value2)) {
+            System.out.println("Correct!");
             return true;
         } else {
+            System.out.println(value1 + " is wrong answer ;(. Correct answer was " + value2 + ".");
             return false;
         }
     }

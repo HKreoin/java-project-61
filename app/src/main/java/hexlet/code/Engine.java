@@ -16,7 +16,7 @@ public class Engine {
             case 4 -> GSD.question();
             case 5 -> Progression.question();
             case 6 -> Prime.question();
-            default -> System.out.print("Error of game choose");
+            default -> System.out.print("");
         }
 
         if (numOfGame != 1) {

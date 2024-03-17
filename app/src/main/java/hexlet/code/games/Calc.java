@@ -22,12 +22,6 @@ public final class Calc {
             case "*" -> String.valueOf(number1 * number2);
             default -> throw new UnsupportedOperationException("Incorrect operand");
         };
-        if (answer.equals(calc)) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println(answer + " is wrong answer ;(. Correct answer was " + calc + ".");
-            return false;
-        }
-        return answer.equals(calc);
+        return Util.check(answer, calc);
     }
 }

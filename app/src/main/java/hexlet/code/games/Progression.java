@@ -19,12 +19,6 @@ public class Progression {
         System.out.print("Question: ");
         Util.printArray(hiddenProg);
         String answer = Util.answer();
-        if (answer.equals(hiddenNum)) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println(answer + " is wrong answer ;(. Correct answer was " + hiddenNum + ".");
-            return false;
-        }
-        return answer.equals(hiddenNum);
+        return Util.check(answer, hiddenNum);
     }
 }
