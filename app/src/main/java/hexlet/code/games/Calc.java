@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Util;
-import java.util.Scanner;
 
 public final class Calc {
 
@@ -10,14 +9,13 @@ public final class Calc {
     }
 
     public static boolean play() {
-        Scanner scanner = new Scanner(System.in);
+
         int number1 = Util.random();
         int number2 = Util.random();
         String operand = Util.operand();
 
         System.out.println("Question: " + number1 + " " + operand + " " + number2);
-        System.out.print("Your answer: ");
-        String answer = scanner.next();
+        String answer = Util.answer();
         String calc = switch (operand) {
             case "+" -> String.valueOf(number1 + number2);
             case "-" -> String.valueOf(number1 - number2);

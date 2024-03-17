@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Util;
-import java.util.Scanner;
 
 public class Even {
 
@@ -10,9 +9,7 @@ public class Even {
     }
 
     public static boolean play() {
-        Scanner scanner = new Scanner(System.in);
         String even = "";
-        String answer = "";
         int number = Util.random();
 
         if (number % 2 == 0) {
@@ -21,8 +18,7 @@ public class Even {
             even = "no";
         }
         System.out.println("Question: " + number);
-        System.out.print("Your answer: ");
-        answer = scanner.next();
+        String answer = Util.answer();
         if (answer.equals(even)) {
             System.out.println("Correct!");
         } else {

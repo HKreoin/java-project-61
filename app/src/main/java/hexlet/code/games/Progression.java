@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Util;
-import java.util.Scanner;
 
 public class Progression {
 
@@ -19,9 +18,7 @@ public class Progression {
 
         System.out.print("Question: ");
         Util.printArray(hiddenProg);
-        System.out.print("Your answer: ");
-        Scanner scanner = new Scanner(System.in);
-        String answer = scanner.next();
+        String answer = Util.answer();
         if (answer.equals(hiddenNum)) {
             System.out.println("Correct!");
         } else {

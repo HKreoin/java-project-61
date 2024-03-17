@@ -1,5 +1,7 @@
 package hexlet.code;
 
+import java.util.Scanner;
+
 public class Util {
     public static int random() {
         return random(1, 100);
@@ -55,4 +57,12 @@ public class Util {
         }
         System.out.println();
     }
+
+    public static String answer() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Your answer: ");
+        String answer = scanner.next();
+        return answer;
+    }
+
 }
