@@ -74,7 +74,8 @@ public class Util {
     }
 
     public static boolean prime(int num) {
-        for (int i = 2; i <= Math.sqrt(num); i++) {
+        System.out.println(Math.sqrt(num));
+        for (int i = 1; i <= Math.sqrt(num); i++) {
             if (num % i == 0 || num <= 1) {
                 return false;
             }
