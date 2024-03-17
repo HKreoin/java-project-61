@@ -11,6 +11,7 @@ public class Engine {
     public static void start(int num) {
         String numOfGame = String.valueOf(num);
         String name = Great.play();
+        int iterationOfGames = 3;
         switch (numOfGame) {
             case "2" -> Even.question();
             case "3" -> Calc.question();
@@ -22,7 +23,7 @@ public class Engine {
 
         if (numOfGame != "1") {
             boolean state = true;
-            for (int i = 0; i < 3 && state; i++) {
+            for (int i = 0; i < iterationOfGames && state; i++) {
                 state = switch (numOfGame) {
                     case "2" -> Even.play();
                     case "3" -> Calc.play();

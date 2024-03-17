@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int quantity = 6;
+        final int quantity = 6;
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Great");
         System.out.println("2 - Even");

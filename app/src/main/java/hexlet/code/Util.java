@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Util {
     public static int random() {
 
-        int min = 1;
-        int max = 100;
+        final int min = 1;
+        final int max = 100;
 
         return random(min, max);
     }
@@ -41,14 +41,14 @@ public class Util {
     }
 
     public static int[] progression() {
-        int minLength = 5;
-        int maxLength = 10;
+        final int minLength = 5;
+        final int maxLength = 10;
         int[] numbers = new int[random(minLength, maxLength)];
-        int minStep = 1;
-        int maxStep = 10;
+        final int minStep = 1;
+        final int maxStep = 10;
         int append = random(minStep, maxStep);
-        int minNumber = 0;
-        int maxNumber = 100;
+        final int minNumber = 0;
+        final int maxNumber = 100;
         int length = numbers.length;
 
         numbers[0] = random(minNumber, maxNumber);
