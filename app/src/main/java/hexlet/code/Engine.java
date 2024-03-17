@@ -8,26 +8,27 @@ import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 
 public class Engine {
-    public static void start(int numOfGame) {
+    public static void start(int num) {
+        String numOfGame = String.valueOf(num);
         String name = Great.play();
         switch (numOfGame) {
-            case 2 -> Even.question();
-            case 3 -> Calc.question();
-            case 4 -> GSD.question();
-            case 5 -> Progression.question();
-            case 6 -> Prime.question();
+            case "2" -> Even.question();
+            case "3" -> Calc.question();
+            case "4" -> GSD.question();
+            case "5" -> Progression.question();
+            case "6" -> Prime.question();
             default -> System.out.print("");
         }
 
-        if (numOfGame != 1) {
+        if (numOfGame != "1") {
             boolean state = true;
             for (int i = 0; i < 3 && state; i++) {
                 state = switch (numOfGame) {
-                    case 2 -> Even.play();
-                    case 3 -> Calc.play();
-                    case 4 -> GSD.play();
-                    case 5 -> Progression.play();
-                    case 6 -> Prime.play();
+                    case "2" -> Even.play();
+                    case "3" -> Calc.play();
+                    case "4" -> GSD.play();
+                    case "5" -> Progression.play();
+                    case "6" -> Prime.play();
                     default -> false;
                 };
             }
