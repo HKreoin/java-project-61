@@ -11,7 +11,7 @@ public class Engine {
     public static void start(int num) {
         String numOfGame = String.valueOf(num);
         String name = Great.play();
-        int iterationOfGames = 3;
+        final int iterationOfGames = 3;
         switch (numOfGame) {
             case "2" -> Even.question();
             case "3" -> Calc.question();

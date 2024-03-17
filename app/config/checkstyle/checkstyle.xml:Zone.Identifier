@@ -1,3 +1,4 @@
 [ZoneTransfer]
 ZoneId=3
-HostUrl=https://github.com/
+ReferrerUrl=https://github.com/HKreoin/java-project-61/actions/runs/8313939305
+HostUrl=https://pipelinesghubeus10.actions.githubusercontent.com/nTKOh9eIj9fPhXqoqaTvTjHnepjFr89CppQR1seUaL3IPRF2tN/_apis/pipelines/1/runs/18/signedartifactscontent?artifactName=test-data&urlExpires=2024-03-17T08%3A01%3A00.1634421Z&urlSigningMethod=HMACV2&urlSignature=%2BxdYtZ20uGFqjkphTNOwArgb%2FjmpglgMTf7qV263Ctk%3D
