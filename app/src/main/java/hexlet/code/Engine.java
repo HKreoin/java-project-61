@@ -5,6 +5,7 @@ import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.GSD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 public class Engine {
     public static void start(int numOfGame) {
@@ -14,6 +15,7 @@ public class Engine {
             case 3 -> Calc.question();
             case 4 -> GSD.question();
             case 5 -> Progression.question();
+            case 6 -> Prime.question();
             default -> System.out.print("Error of game choose");
         }
 
@@ -25,6 +27,7 @@ public class Engine {
                     case 3 -> Calc.play();
                     case 4 -> GSD.play();
                     case 5 -> Progression.play();
+                    case 6 -> Prime.play();
                     default -> false;
                 };
             }

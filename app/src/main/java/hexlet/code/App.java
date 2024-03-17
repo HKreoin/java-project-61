@@ -14,11 +14,12 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - GSD");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
         if (scanner.hasNextInt()) {
             int numOfGame = scanner.nextInt();
-            if (0 < numOfGame && numOfGame <= 5) {
+            if (0 < numOfGame && numOfGame <= 6) {
                 Engine.start(numOfGame);
             }
         }
