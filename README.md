@@ -1,8 +1,8 @@
-Мой первый проект на Java  - "Игры разума" по первому модулю курса Hexlet.
+Мой первый проект на Java  - "Игры разума".
 В прогремме реализован выбор игр, сами игры, представляющие собой набор математических задач.
 Написал программу в редакторе VS Code, с плагинами WSL, Gradle и GIT, ипользуя линтер Checkstyle.
 
-My first project in Java is "Mind Games" for the first module of the Hexlet course.
+My first project in Java is "Mind Games".
 The program implements a selection of games, the games themselves, which are a set of mathematical tasks.
 I wrote a program in the VS Code, with WSL, Gradle and GIT plugins, using the Checkstyle linter.
 
